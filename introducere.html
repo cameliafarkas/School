@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html> <body>
+<body bgcolor=#E6E6FA> 
+
+<p style="text-align:center; font-size:25pt"> 1.Introducere </p>
+
+<p> Dezvoltarea  sistemelor  de   baze  de  date  reprezinta  unul  dintre  cele   mai  importante  aspecte  in  domeniul  tehnologiei   informatiei, avand  un  impact  decisiv  asupra  modului   de  organizare  si  functionare  a  numeroaselor institutii   si  servicii.
+Bazele de   date   sunt  o  componenta  importanta  deoarece  in   cursul  unei  zile  majoritatea  persoanelor  desfasoara   activitati  care  implica  interactiunea  cu  o   baza  de  date: depunerea  sau  extragerea  unei   sume  de  bani  din  banca, rezervarea  biletelor   de  tren  sau  de  avion, cautarea  unei  carti   intr-o  biblioteca  computerizata, gestiunea  angajatilor dintr-o  firma, cumpararea  unor  produse etc.  Bazele  de   date  pot  avea  marimi  si  complexitati  extrem   de  variate,  de  la  cateva  zeci  de  inregistrari pana  la  milioane  de  inregistrari.
+O baza de date, uneori numita si banca de date (abreviat BD), reprezinta o modalitate de stocare a unor informatii si date pe un suport extern (un dispozitiv de stocare), cu posibilitatea extinderii usoare si a regasirii rapide a acestora. La prima vedere, sarcina poate parea banala. Totusi, in conditiile in care este vorba de a lucra cu milioane de elemente, fiecare putand consta din mari cantitati de date care trebuie accesate simultan prin Internet de catre mii de utilizatori raspanditi pe intreg globul; si in conditiile cand disponibilitatea aplicatiei si datelor trebuie sa fie permanenta (de ex. pentru a nu pierde ocazia de a incheia afaceri), solutiile bune nu sunt de loc simple.
+De obicei, o baza de date este memorata intr-unul sau mai multe fisiere. Bazele de date sunt manipulate cu ajutorul sistemelor de gestiune a bazelor de date.
+Exista mai multe tipuri de baze de date: </p>
+       
+<ul> <li>Modelul retea </il> </ul>
+
+Se bazeaza pe structura de reprezentare retea si tipuri de relatii 1 la 1, 1 la n si m la n. O retea este formata din mai multe noduri legate intre ele. in modelul retea al unei baze de date, fiecare nod reprezinta o colectie de date iar legaturile reflecta relatiile de asociere. Caracteristica principala este aceea ca, accepta ca oricare colectie de date sa se situeze pe nivelul 1, prin indicarea explicita a relatiilor dintre acestea. in plus, accepta existenta temporara a inregistrarilor fara legaturi cu alte inregistrari si permite reprezentarea unica a inregistrarilor in baza de date. Modelul retea este un model complex, dificil de folosit, ocupa spatiu de memorie ineficient si dependentele din retea sunt putin clare, din cauza existentei mai multor relatii de subordonare.
+
+<ul> <li>Modelul relational 
+ 
+  <p>Conform acestui model, conceperea structurii bazei de date depinde exclusiv de legaturile intre obiecte ce permit o descriere simpla sub forma tabelara. 
+ Acest model de reprezentare a datelor se bazeaza pe notiunea matematica de relatie. O relatie R este o submultime a produsului cartezian de n multimi numite domenii (Di), n fiind gradul relatiei. O baza de date relationala este o multime de relatii, legate prin domenii de definitie comune. 
+ Modelul relational a fost introdus pentru a elimina restrictiile impuse de catre modelul retea asupra legaturilor intre colectiile de date. Anumite legaturi pot sa nu existe la un moment dat si sa apara dupa aceea. in aceste conditii in modelul retea structura datelor trebuie modificata, ceea ce nu este cazul modelului relational, unde numai legaturile intre colectii sunt semnificative. </p>
+ 
+
+
+ <ul> <il>Modelul ierarhic 
+
+   <br> Se bazeaza pe structuri de reprezentare arborescente si tipuri de relatii 1 la 1 si 1 la n. Cu ajutorul acestui model, structura bazei de date poate fi reprezentata sub forma unui arbore cu un nod radacina (trunchiul) si celelalte noduri (ramuri) contin colectiile de date. Legaturile intre noduri reflecta relatiile de asociere intre inregistrarile (set de date cu aceleasi proprietati) colectiilor de date superioare si inferioare. 
+ Modelul ierarhic are urmatoarele caracteristici: 
+ . accesul direct este posibil numai la inregistrarile din colectia de date radacina: 
+ . accesul la inregistrarile colectiilor de date inferioare se face prin specificarea tuturor colectiilor, care se gasesc pe drumul de la colectia radacina pana la colectia cercetata 
+ . toate inregistrarile din colectiile bazei de date, cu exceptia colectiei de date radacina au cate o inregistrare superioara. 
+ Se defineste astfel o relatie, care asigura consultarea inregistrarilor din colectiile de date de sus in jos si de la stanga spre dreapta (modul "top-down"). </br>
+ <ul> <il>Modelul orientat obiect
+ Baza de date orientata obiect este o multime de clase de obiecte persistente (in memoria externa), organizata coerent si ordonata in ierarhii, partajata pentru utilizatorii concurenti. El aduce bazelor de date un plus de deschidere, independenta logica a datelor de aplicatii, reutilizarea obiectelor etc. Modelul da bune rezultate pentru probleme foarte mari si complexe (principiile complexitatii sunt incluse in model). in structura sunt acceptate toate tipurile de date cunoscute, deci se poate aplica pentru toate domeniile de activitate.   Caracteristici: sunt tratate in mod unitar ca obiecte: datele, programele, comunicatia => independenta totala intre ele, comunicarea si distribuirea sunt asigurate atat intre date, cat si intre programe, structura de date este simplificata foarte mult=>usurinta in utilizare si portabilitate ridicat, lucrul cu obiecte ne apropie firesc de lumea reala, in care se gasesc obiecte care au proprietati, asupra carora actionam noi, pot fi abordate foarte multe domenii din lumea reala in care se regasesc cele mai diferite tipuri de date. se asigura: accesul neprocedural, comunicatia, portabilitatea, deschiderea aplicatiilor cu baze de date.
+Etapele realizarii unei baze de date  
+
+ <ul type-"1"> <li> Analiza  (la nivel extern) </li> 
+ <li> Proiectarea: schema conceptuala, schema interna, si organizarea fizica a datelor, coodordonata de sistemul de gestiune a bazelor de date </li>
+ <li> Implementarea (realizarea bazei de date, a programelor si introducerea datelor in baza de date) </li> </ul>
+
+<p> Sistemul de gestiune al bazei de date 
+
+ Sistemul de Gestiune al Bazei de Date (SISTEMUL DE GESTIUNE AL BAZELOR DE DATE) reprezinta un pachet de programe specializat pentru definirea, crearea, intretinerea si accesul controlat la baza de date. 
+ Obiectivul principal al unui SISTEMUL DE GESTIUNE AL BAZELOR DE DATE este de a separa datele de programele de aplicatie. SISTEMUL DE GESTIUNE AL BAZELOR DE DATE constituie o interfata intre utilizatori si baza de date si consta din programe care interactioneaza cu programele de aplicatie ale utilizatorului si cu baza de date. Un SISTEMUL DE GESTIUNE AL BAZELOR DE DATE are o structura complexa si include module program specializate pentru a indeplini anumite functiuni: 
+-gestionarea bazei de date; 
+-definirea datelor (descrierea datelor); 
+-manipularea datelor (actualizare si interogarea bazei de date); 
+-controlul si securitatea datelor (controlul integritatii, accesul concurential si securitatea datelor); 
+-utilitare </p>
+
+Caracteristici
+<ul> <li> Independenta fizica si logica </li> 
+Independenta structurilor fizice permite stocarea structurilor de memorare dintr-un univers real sau conceptual, independent de structurile de date cu scopul realizarii unui acces simplu la date. Independenta logica se refera la posibilitatea de a adauga si a modifica inregistrarii si scheme fara a rescrie programele existente. 
+<li> Reducerea redundantei si inconsistentei  </li>
+Crearea fisierelor se face in general in perioade de timp diferite. Aceasta face ca aceleasi informatii sa fie replicate in mai multe fisiere. Aceste redundante cresc inutil volumul global al bazei de date. Timpul de acces creste. Creste si riscul de a avea inconsistenta in datele memorate. Faptul ca, copiile ale acelorasi date stocate in diverse locuri nu concorda intre ele, deoarece ele nu au fost actualizate in acelasi timp determina inconsistenta. Optimizarea accesului la date 
+<li> Optimizarea accesului la date  </li> 
+ Sistemul de gestiune al bazelor de date trebuie sa fie prevazut cu un procesor de optimizare a operatiilor exprimate de informaticieni  cu ajutorul unui limbaj de manipulare si  de neinformaticieni cu ajutorul unui limbaj neprocedural. Limbajele neprocedurale permit utilizatorilor sa descrie ceea ce vor sa obtina fara a indica modul cum se obtine.   Posibilitatea de a manipula date cu ajutorul unor limbaje neprocedurale si de neinformaticieni, independent de implementarea lor constituie  o generalizare a manipularii datelor.
+<li> Securitatea si confidentialitatea datelor  </li>
+ Datele trebuie protejate de accese neautorizate si rau intentionate. SISTEMUL DE GESTIUNE AL BAZELOR DE DATE-ul trebuie sa gestioneze accesul la informatii si la tipurile de operatii pe care fiecare utilizator le poate efectua si sa valideze aceste operatii. De asemenea se realizeaza o protejare prin parolare si criptare impotriva accesului neautorizat. 
+ <li> Partajabilitatea datelor </li>  
+  Partajabilitatea datelor determina folosirea bazei simultan de mai multe aplicatii. Asigura gestiunea tranzactiilor si a prelucrarilor concurente. Tranzactia este o unitate de prelucrare care transforma o instanta consistenta  a bazei in alta instanta consistenta. Sistemul de gestiune al bazelor de date trebuie sa paralelizeze sau sa detecteze cazurile de interblocare (cand o tranzactie asteapta date detinute de alte tranzactii).
+ </ul>
+
+
+<p> Tipuri de sisteme de gestiune al bazei de date
+
+Sistemul de gestiune al bazelor de date de tip ierarhic (hierarchical database) (exemplu IMS) si retea (network database) (exemplu: IDMS) reprezinta din punct de vedere istoric primele generatii de sisteme de gestiune al bazelor de date. in modelele ierarhice si retea datele sunt reprezentate la nivel de articol prin legaturi ierarhice de tip arbore, respectiv de tip graf. Structurile de date corespunzatoare acestor modele pot fi descrise la nivel logic cu ajutorul unei structuri de date abstracte numita diagrama. Diagrama este in acest caz un graf orientat prin care se reprezinta tipuri de entitati si legaturile functionale dintre acestea. Sistemele de gestiune a bazelor de date bazate pe modelul de date retea, respectiv cel ierarhic, poarta numele de sisteme navigationale si au fost dezvoltate in perioada 1960-1970.
+A doua generatie de sisteme de gestiune al bazelor de date o reprezinta modelul relational (exemplu ORACLE, Informix 4GL) care trateaza entitatile ca relatii. Sistemele de Gestiunea Bazelor de Date Relationale sunt caracterizate de structuri de date simple si intuitive, de operatori care se aplica relatiilor pentru a defini, cauta, si reactualiza datele. Bazele de date relationale asigura independenta completa a descrierii logice a datelor in termeni de relatii si in descrierea fizica a datelor in termen de fisiere. in prezent exista cateva sute de sisteme gestiune al bazelor de date relationale pentru toate tipurile de calculatoare. Modelul relational asigura o independenta completa in ceea ce priveste descrierea logica si fizica a datelor. in plus sistemele de gestiune al bazelor de date relationale pun includ limbaje specializate pentru descrierea si manipularea datelor. Modelul relational are capacitati limitate de modelarea datelor. Sistemele de gestiune al bazelor de date relationale nu folosesc obiecte complexe si dinamice, nu realizeaza gestiunea distribuita a datelor si nici gestiunea de cunostinte.
+Includerea tehnicilor de programare orientata obiect in domeniul bazelor da date a condus la aparitia Sistemelor de Gestiune a Bazelor de Date Orientate Obiect (exemple: O2, Orion, Jasmin etc.), care realizeaza o modelare superioara a informatiei luand in considerare aspectele dinamice si integrarea descrierii structurale si comportamentale. Prin utilizarea principiului programarii orientate obiect in domeniul bazelor de date relationale a aparut Sistemele de Gestiune a Bazelor de Date Relationale Orientate Obiect. </p>
+
+
+Oracle
+Oracle consta dintr-un set complet de constructori de aplicatii si produse pentru utilizatori, cautand sa asigure solutii complete in tehnologia informatiei. Aplicatiile Oracle sunt portabile peste un numar mare de statii de lucru si sisteme de operare, de la calculatoare personale la procesoare paralele.  Oracle este inzestrat cu un flexibil Sistem de Management al Bazelor de Date(DBMS)-Serverul Oracle-pentru stocarea si managementul informatiei utilizate de aplicatii.  
+                
+Reprezentarea modelului conceptual 
+Proiectarea judicioasa a unui model al bazei de date poate fi realizata prin diagrama entitate-relatie. Aceasta diagrama reprezinta un mod de descriere a unui sistem sau proces din lumea reala. Diagrama entitate-relatie utilizeaza o descriere grafica pentru doua categorii de evenimente:
+<ul> <li> entitati </li>
+<li> legaturi (asocieri intre entitati) </li> </ul> 
+Entitate =persoana, loc, activitate sau eveniment care este semnificativ pentru modelul realizat.
+O entitate din cadrul modelului trebuie sa se conformeze regulilor urmatoare:
+<ul> <li> numele entitatii trebuie sa fie un substantiv comun sugestiv, care sa permita o prima descriere a entitatii </li>
+<li> nu pot exista doua entitati cu acelasi nume sau o entitate cu doua nume diferite </li>
+<li> pentru fiecare entitate se va da o descriere completa a atributelor sale (semnificatia, domeniul de valori) </li>
+<li> entitatea va avea obligatoriu un atribut sau o combinatie de atribute care sa poata fi cheie primara </li> </ul>
+Diagrama entitate-relatie utilizeaza o descriere grafica a entitatilor, folosind urmatoarele conventii:
+<ul> <li> descrierea entitatii se face intr-un dreptunghi </li>
+<li> numele entitatii este scris pe prima linie cu litere mari </li>
+<li> atributele sunt scrise cu litere mici pe liniile urmatoare </li> </ul> 
+Atribut =proprietate descriptiva a unei entitati, caracteristica a unei entitati.
+Numele unui atribut este un substantiv care descrie cu exactitate o caracteristica a entitatii si exprima o insusire calitativa sau cantitativa a entitatii. 
+Un atribut trebuie sa aiba o singura valoare, de un anumit tip. Exista atribute a caror valoare este obligatorie pentru a descrie corect si complet o entitate. Aceste atribute se numesc obligatorii, in timp ce atributele a caror valoare poate lipsi se numesc optionale.
+Reprezentarea atributelor in diagrama entitate-relatie se face dupa urmatoarele reguli:
+<ul> <li> atributele sunt scrise cu litere mici, fiecare pe cate o linie </li> 
+ <li> atributele care sunt identificator unic sunt precedate de caracterul # </li>
+<li> atributele obligatorii sunt precedate de caracterul * </li>
+<li> atributele optionale sunt precedate de caracterul </li? </ul>
+Relatie = asociere, mod de comunicare, interdependenta stabilita (de obicei) intre doua entitati.
+<ul> <il> Relatia reprezinta un raport care exista intre entitati si este exprimata prin utilizarea unor verbe care sa descrie cu exactitate interdependenta dintre acestea. Pot exista mai multe relatii cu acelasi nume, dar intre entitati diferite.
+Cuvintele poate si trebuie exprima optionalitatea relatiei, iar cuvintele scrise italic exprima cardinalitatea sau gradul relatiei. </li>
+<li>Cardinalitatea relatiei = proprietate a celor doua parti ale unei relatii dintre entitatile A si B, care exprima cate instante ale entitatii A sunt asociate cu instantele entitatii B si reciproc. </li>
+<li> Optionalitatea relatiei = proprietate a celor doua parti ale unei relatii dintre entitatile A si B, care exprima cate dintre instantele entitatii A pot sau trebuie sa se asocieze instantelor entitatii B si reciproc. </li>
+
+<p> Procesul de normalizare
+
+Normalizare : o tehnica de generare a unor relatii cu proprietatiile dorite, in 
+scopul memorarii corecte a datelor unei intreprinderi. Procesul de normalizare este o metoda formala de identificare a relatiilor bazate pe chei primare (sau chei candidat in cazul BCNF) si dependentele functionale cu atributele asociate. Normalizarea da posibilitatea proiectantului bazei de date, de a efectua o serie de teste pe baza de date, toate aceste teste ducand la prevenirea posibilitatii de a aparea anomalii la actualizarea bazei de date.
+Prima forma de normalizare: un atribut nu poate avea valori care se repeta 
+ A doua forma de normalizare: orice atribut ce nu e Unique Identification Number sa depinda de intregul Unique Identification Number.  
+ A treia forma de normalizare: un atribut ce nu e Unique Identification Number nu trebuie sa depinda de alt atribut Non-Unique Identification Number. 
+ Transformarea modelului conceptual in model fizic  </p>
+
+<p> Conventii de ridabilitate: Se aplica conventiile Oracle de scriere a diagramei entitate-relatie: 
+ Entitatea se scrie cu majuscule, substantiv la singular in interiorul unui dreptunghi cu varfurile rotunjite.Atributele se scriu cu litere mici , avand in fata unul din caracterele #,*,o(UID, obligatoriu, optional).Orientarea liniilor este de la V la E si de sus in jos, evitand intersectia. Se pot folosi subdiagrame de explicare a diagramelor complexe, si explicarea entitatilor cu multe atribute. 
+</p>
+<p> Procesul maparii
+
+Transformarea modelului conceptual, a diagramei entitate-relatie, in modelul fizic, adica in baza de date propriu zisa, se numeste mapare. Acest proces implica transformarea fiecarui element al diagramei entitate-relatie. 
+
+Maparea relatiilor one-to-one 
+
+Dandu-se doua entitati A si B legate intre ele printr-o relatie one-to-one, este evident ca putem include cheia primara A in cadrulul tabelei B, dar putem proceda la fel de bine si invers, incluzand cheia primara a tabelei B in cadrul tabelei A, deoarece fiecarei instante a entitatii A ii corespunde cel mult o instanta a entitatii B, dar si invers, oricarei instante a entitatii B ii corespunde cel mult o instanta a entitatii A.
+
+Maparea relatiilor barate
+
+Relatiile barate sunt mapate ca cheie straina in tabela aflata in partea many a relatiei, la fel ca la maparea oricarei relatii one-to-many. Bara de pe relatie exprima faptul ca acele coloane ce fac parte din cheia straina vor devenii parte a cheii primare a tabelei din partea many a relatiei barate.
+ </p>
+<pre> Elemente de algebra relationala
+
+
+
+Algebra relationala ofera un ansamblu de operatori permitand operarea asupra conceptelor modelului relational. Rezultatul obtinut prin utilizarea operatorilor algebrei relationale este un tabel virtual.
+
+Operatorii algebrei relationale se definesc si utilizeaza dupa cum urmeaza:
+
+Operatori de asamblare
+ Reuniunea
+
+Operatorul de reuniune creaza un nou tabel T plecand de la doua tabele R (continand m tupluri) si S (continand n tupluri) prezentand aceeasi structura. Rezultatul, tabelul T prezinta aceeasi structura cu a tabelelor sursa dar contine m+n tupluri
+T=R union S
+Intersectia
+
+ Intersectia a doua tabele R si S (R n S) prezentand aceeasi structura, unde R prezinta m tupluri iar S prezinta n tupluri genereaza relatia T (cu aceeasi structura) continand tuplurile identice din R si S
+T= R intersect S
+
+Diferenta
+
+Diferenta a doua tabele (relatii) R si S prezentand aceeasi structura conduce la obtinerea tabelului (relatiei)T continand tuplurile lui R  care nu se regasesc in S. 
+T= (R –S)
+
+Produs Cartezian
+
+Produsul cartezian al Tabelelor R si S conduce la obtinerea unui tabel T stocand multimea perechilor obtinute din concatenarea inregistrarilor lui R si S
+
+T= (R x S)
+
+Operatori unari
+
+Proiectia
+
+Operatorul de proiectie aplicat asupra tabelului R continand m atribute conduce la obtinerea tabelului T cu acelasi numar de tupluri ca si R, dar cu un numar redus de atribute.
+T = project R on(A, B), unde A si B sunt atribute apartinand lui R
+
+Selectia
+
+Aplicarea operatorului de selectie asupra tabelului R genereaza tabelul T prezentand aceeasi  structura cu R dar continand doar tuplurile ce corespund unei conditii precizate:
+
+T= Select R where<conditie>
+
+Operatori de extensie
+
+Compunerea (Join)
+
+Compunerea a doua tabele R si S, dupa valorile egale ale unui atribut comun A, conduce la obtinerea un ui tabel T ale carei tupluri s-au format prin produsul cartezian al tuplurilor din R si S prezentand valori egale pe atributul de compunere A.
+JOIN R1 and R2 where
+R1.<atribut>=R2.atribut
+
+Diviziunea
+
+Fiind date tabelele R (cu schema r) si S (cu schema s), aplicarea operatorului de diviziune va genera tabelul (R ?S) de grad r-s ale carui tupluri concatenate cu tuplurile lui S vor genera tupluri apartinand lui R.
+R1 divide R2
+</pre>
+Limbajul SQL
+
+SQL (Structured Query Language - Limbaj Structurat de Interogare) este un limbaj de programare specific pentru manipularea datelor in sistemele de manipulare a bazelor de date relationale (RDBMS), iar la origine este un limbaj bazat pe algebra relationala. Acesta are ca scop inserarea datelor, interogatii, actualizare si stergere, modificarea si crearea schemelor, precum si controlul accesului la date. A devenit un standard in domeniu (standardizat ANSI-ISO), fiind cel mai popular limbaj utilizat pentru creearea, modificarea, regasirea si manipularea datelor de catre sistemele de gestiune al bazelor de date (Sistemele de Gestiune a Bazelor de Date) relationale. Pe langa versiunile standardizate ale limbajului, exista o multime de dialecte si variante, unele proprietare, fiind specifice anumitor SISTEMUL DE GESTIUNE AL BAZELOR DE DATE-uri si de asemenea continand extensii pentru a suporta SBD-urile (Sistemele de Baze de Date) obiectuale (obiectual-relationale).
+
+Elementele limbajului SQL
+Limbajul SQL este divizat in urmatoarele elemente:
+<ul> <li> Clauze, care sunt componente ale instructiunilor si interogarilor. </li>
+<li> Expresii, al caror efect este producerea de valori scalare sau tabele. </li> 
+<li> Predicate, pot specifica conditii care sunt evaluate de SQL conform logicii ternare sau logicii booleene, in scopul limitarii efectelor instructiunilor, sau pentru a influenta cursul programului. </li>
+<li> Interogarile, au ca scop regasirea datelor dupa criterii specifice. </li>
+<li> Instructiunile, pot avea un efect persistent asupra datelor sau structurii datelor, sau pot controla tranzactiile, conexiunile sau cursul programului. in general, instructiunile SQL se termina cu caracterul punct-virgula (";"), desi acest lucru nu este obligatoriu in toate platformele SQL. Spatiile albe suplimentare sunt ignorate, dar ele pot fi folosite pentru lizibilitatea codului SQL. </li>
+
+</body>
+</html>
