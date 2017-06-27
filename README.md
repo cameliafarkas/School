@@ -1,2 +1,2 @@
-# HTML
-Aici exista toate sursele pentru site (cod HTML + CSS) + Screenshot-uri ale utilizarii bazei de date Oracle
+# Web Design
+This branch contains the source code of the site (HTML + CSS), alongsie Screenshots from Oracle and MYSQL
