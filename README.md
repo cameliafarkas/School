@@ -1,2 +1,2 @@
 # Web Design
-This branch contains the source code of the site (HTML + CSS), alongsie Screenshots from Oracle and MYSQL
+This branch contains the source code of the site (HTML + CSS), alongside Screenshots from Oracle and MYSQL
